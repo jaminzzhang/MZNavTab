@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDB3B9521A9F24DC00307C8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9511A9F24DC00307C8A /* main.m */; };
+		EDB3B9551A9F24DD00307C8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9541A9F24DD00307C8A /* AppDelegate.m */; };
+		EDB3B95B1A9F24DD00307C8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB3B9591A9F24DD00307C8A /* Main.storyboard */; };
+		EDB3B95D1A9F24DD00307C8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3B95C1A9F24DD00307C8A /* Images.xcassets */; };
+		EDB3B9601A9F24DD00307C8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB3B95E1A9F24DD00307C8A /* LaunchScreen.xib */; };
+		EDB3B96C1A9F24DD00307C8A /* MZNavTabSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B96B1A9F24DD00307C8A /* MZNavTabSampleTests.m */; };
+		EDB3B9781A9F261700307C8A /* MZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9771A9F261700307C8A /* MZNavigationController.m */; };
+		EDB3B97B1A9F284B00307C8A /* MZNavTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B97A1A9F284B00307C8A /* MZNavTabController.m */; };
+		EDB3B9811A9F302B00307C8A /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9801A9F302B00307C8A /* ViewController2.m */; };
+		EDB3B9841A9F304000307C8A /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9831A9F304000307C8A /* ViewController1.m */; };
+		EDB3B9871A9F309800307C8A /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9861A9F309800307C8A /* MainTabBarController.m */; };
+		EDB3B98A1A9F343700307C8A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9891A9F343700307C8A /* SecondViewController.m */; };
+		EDB3B98D1A9F344500307C8A /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B98C1A9F344500307C8A /* ThirdViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDB3B9661A9F24DD00307C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDB3B9441A9F24DC00307C8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDB3B94B1A9F24DC00307C8A;
+			remoteInfo = MZNavTabSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDB3B94C1A9F24DC00307C8A /* MZNavTabSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZNavTabSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB3B9501A9F24DC00307C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB3B9511A9F24DC00307C8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDB3B9531A9F24DD00307C8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDB3B9541A9F24DD00307C8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDB3B95A1A9F24DD00307C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDB3B95C1A9F24DD00307C8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EDB3B95F1A9F24DD00307C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EDB3B9651A9F24DD00307C8A /* MZNavTabSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZNavTabSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB3B96A1A9F24DD00307C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB3B96B1A9F24DD00307C8A /* MZNavTabSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZNavTabSampleTests.m; sourceTree = "<group>"; };
+		EDB3B9761A9F261700307C8A /* MZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZNavigationController.h; sourceTree = "<group>"; };
+		EDB3B9771A9F261700307C8A /* MZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZNavigationController.m; sourceTree = "<group>"; };
+		EDB3B9791A9F284B00307C8A /* MZNavTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZNavTabController.h; sourceTree = "<group>"; };
+		EDB3B97A1A9F284B00307C8A /* MZNavTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZNavTabController.m; sourceTree = "<group>"; };
+		EDB3B97F1A9F302B00307C8A /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		EDB3B9801A9F302B00307C8A /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		EDB3B9821A9F304000307C8A /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		EDB3B9831A9F304000307C8A /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		EDB3B9851A9F309800307C8A /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		EDB3B9861A9F309800307C8A /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		EDB3B9881A9F343700307C8A /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		EDB3B9891A9F343700307C8A /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		EDB3B98B1A9F344500307C8A /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		EDB3B98C1A9F344500307C8A /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDB3B9491A9F24DC00307C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB3B9621A9F24DD00307C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDB3B9431A9F24DC00307C8A = {
+			isa = PBXGroup;
+			children = (
+				EDB3B9751A9F25D800307C8A /* MZNavTab */,
+				EDB3B94E1A9F24DC00307C8A /* MZNavTabSample */,
+				EDB3B9681A9F24DD00307C8A /* MZNavTabSampleTests */,
+				EDB3B94D1A9F24DC00307C8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDB3B94D1A9F24DC00307C8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3B94C1A9F24DC00307C8A /* MZNavTabSample.app */,
+				EDB3B9651A9F24DD00307C8A /* MZNavTabSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDB3B94E1A9F24DC00307C8A /* MZNavTabSample */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3B9531A9F24DD00307C8A /* AppDelegate.h */,
+				EDB3B9541A9F24DD00307C8A /* AppDelegate.m */,
+				EDB3B9851A9F309800307C8A /* MainTabBarController.h */,
+				EDB3B9861A9F309800307C8A /* MainTabBarController.m */,
+				EDB3B9881A9F343700307C8A /* SecondViewController.h */,
+				EDB3B9891A9F343700307C8A /* SecondViewController.m */,
+				EDB3B98B1A9F344500307C8A /* ThirdViewController.h */,
+				EDB3B98C1A9F344500307C8A /* ThirdViewController.m */,
+				EDB3B9821A9F304000307C8A /* ViewController1.h */,
+				EDB3B9831A9F304000307C8A /* ViewController1.m */,
+				EDB3B97F1A9F302B00307C8A /* ViewController2.h */,
+				EDB3B9801A9F302B00307C8A /* ViewController2.m */,
+				EDB3B95C1A9F24DD00307C8A /* Images.xcassets */,
+				EDB3B95E1A9F24DD00307C8A /* LaunchScreen.xib */,
+				EDB3B9591A9F24DD00307C8A /* Main.storyboard */,
+				EDB3B94F1A9F24DC00307C8A /* Supporting Files */,
+			);
+			path = MZNavTabSample;
+			sourceTree = "<group>";
+		};
+		EDB3B94F1A9F24DC00307C8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3B9501A9F24DC00307C8A /* Info.plist */,
+				EDB3B9511A9F24DC00307C8A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDB3B9681A9F24DD00307C8A /* MZNavTabSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3B96B1A9F24DD00307C8A /* MZNavTabSampleTests.m */,
+				EDB3B9691A9F24DD00307C8A /* Supporting Files */,
+			);
+			path = MZNavTabSampleTests;
+			sourceTree = "<group>";
+		};
+		EDB3B9691A9F24DD00307C8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3B96A1A9F24DD00307C8A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDB3B9751A9F25D800307C8A /* MZNavTab */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3B9761A9F261700307C8A /* MZNavigationController.h */,
+				EDB3B9771A9F261700307C8A /* MZNavigationController.m */,
+				EDB3B9791A9F284B00307C8A /* MZNavTabController.h */,
+				EDB3B97A1A9F284B00307C8A /* MZNavTabController.m */,
+			);
+			name = MZNavTab;
+			path = ../MZNavTab;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDB3B94B1A9F24DC00307C8A /* MZNavTabSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB3B96F1A9F24DD00307C8A /* Build configuration list for PBXNativeTarget "MZNavTabSample" */;
+			buildPhases = (
+				EDB3B9481A9F24DC00307C8A /* Sources */,
+				EDB3B9491A9F24DC00307C8A /* Frameworks */,
+				EDB3B94A1A9F24DC00307C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MZNavTabSample;
+			productName = MZNavTabSample;
+			productReference = EDB3B94C1A9F24DC00307C8A /* MZNavTabSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDB3B9641A9F24DD00307C8A /* MZNavTabSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB3B9721A9F24DD00307C8A /* Build configuration list for PBXNativeTarget "MZNavTabSampleTests" */;
+			buildPhases = (
+				EDB3B9611A9F24DD00307C8A /* Sources */,
+				EDB3B9621A9F24DD00307C8A /* Frameworks */,
+				EDB3B9631A9F24DD00307C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDB3B9671A9F24DD00307C8A /* PBXTargetDependency */,
+			);
+			name = MZNavTabSampleTests;
+			productName = MZNavTabSampleTests;
+			productReference = EDB3B9651A9F24DD00307C8A /* MZNavTabSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDB3B9441A9F24DC00307C8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = MZ;
+				TargetAttributes = {
+					EDB3B94B1A9F24DC00307C8A = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 856G2ABZUY;
+					};
+					EDB3B9641A9F24DD00307C8A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = EDB3B94B1A9F24DC00307C8A;
+					};
+				};
+			};
+			buildConfigurationList = EDB3B9471A9F24DC00307C8A /* Build configuration list for PBXProject "MZNavTabSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDB3B9431A9F24DC00307C8A;
+			productRefGroup = EDB3B94D1A9F24DC00307C8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDB3B94B1A9F24DC00307C8A /* MZNavTabSample */,
+				EDB3B9641A9F24DD00307C8A /* MZNavTabSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDB3B94A1A9F24DC00307C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB3B95B1A9F24DD00307C8A /* Main.storyboard in Resources */,
+				EDB3B9601A9F24DD00307C8A /* LaunchScreen.xib in Resources */,
+				EDB3B95D1A9F24DD00307C8A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB3B9631A9F24DD00307C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDB3B9481A9F24DC00307C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB3B9551A9F24DD00307C8A /* AppDelegate.m in Sources */,
+				EDB3B9871A9F309800307C8A /* MainTabBarController.m in Sources */,
+				EDB3B97B1A9F284B00307C8A /* MZNavTabController.m in Sources */,
+				EDB3B9841A9F304000307C8A /* ViewController1.m in Sources */,
+				EDB3B98A1A9F343700307C8A /* SecondViewController.m in Sources */,
+				EDB3B98D1A9F344500307C8A /* ThirdViewController.m in Sources */,
+				EDB3B9781A9F261700307C8A /* MZNavigationController.m in Sources */,
+				EDB3B9521A9F24DC00307C8A /* main.m in Sources */,
+				EDB3B9811A9F302B00307C8A /* ViewController2.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB3B9611A9F24DD00307C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB3B96C1A9F24DD00307C8A /* MZNavTabSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDB3B9671A9F24DD00307C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDB3B94B1A9F24DC00307C8A /* MZNavTabSample */;
+			targetProxy = EDB3B9661A9F24DD00307C8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDB3B9591A9F24DD00307C8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDB3B95A1A9F24DD00307C8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDB3B95E1A9F24DD00307C8A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDB3B95F1A9F24DD00307C8A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDB3B96D1A9F24DD00307C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDB3B96E1A9F24DD00307C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDB3B9701A9F24DD00307C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MZNavTabSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		EDB3B9711A9F24DD00307C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MZNavTabSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		EDB3B9731A9F24DD00307C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MZNavTabSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MZNavTabSample.app/MZNavTabSample";
+			};
+			name = Debug;
+		};
+		EDB3B9741A9F24DD00307C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MZNavTabSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MZNavTabSample.app/MZNavTabSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDB3B9471A9F24DC00307C8A /* Build configuration list for PBXProject "MZNavTabSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB3B96D1A9F24DD00307C8A /* Debug */,
+				EDB3B96E1A9F24DD00307C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB3B96F1A9F24DD00307C8A /* Build configuration list for PBXNativeTarget "MZNavTabSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB3B9701A9F24DD00307C8A /* Debug */,
+				EDB3B9711A9F24DD00307C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB3B9721A9F24DD00307C8A /* Build configuration list for PBXNativeTarget "MZNavTabSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB3B9731A9F24DD00307C8A /* Debug */,
+				EDB3B9741A9F24DD00307C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDB3B9441A9F24DC00307C8A /* Project object */;
+}
