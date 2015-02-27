@@ -29,6 +29,6 @@
 @property (nonatomic, weak) UIView * tabBar;
 @property (nonatomic, weak) UIViewController * tabBarViewController;
 //@property (nonatomic, strong) NSArray * tabBarLayoutConstraints;
-@property (nonatomic, assign) BOOL supportAutoLayout;
+@property (nonatomic, assign) BOOL supportAutoLayout;  //Default is YES
 
 @end

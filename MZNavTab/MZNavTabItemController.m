@@ -70,11 +70,34 @@
     //push
     CGRect bounds = viewController.view.bounds;
     CGFloat tabBarHeight = self.tabBar.bounds.size.height;
-    CGRect tabbarFrame = CGRectMake(0, bounds.size.height - tabBarHeight, bounds.size.width, tabBarHeight);
-    self.tabBar.frame = tabbarFrame;
-    [viewController.view addSubview:self.tabBar];
+    CGRect tabbarFrame = CGRectMake(0, bounds.size.height - tabBarHeight,
+                                    bounds.size.width, tabBarHeight);
+    UIView * containnerView = viewController.view;
 
-    if (self.supportAutoLayout) {
+    BOOL shouldAutoLayout = self.supportAutoLayout;
+    //Adjust for UITableViewController
+    if ([containnerView isKindOfClass:[UIScrollView class]]) {
+//        [self.tabBar setTranslatesAutoresizingMaskIntoConstraints:YES];
+        UIScrollView * scrollView = (UIScrollView *)containnerView;
+        tabbarFrame.origin.y += scrollView.contentOffset.y;
+        shouldAutoLayout = NO;
+
+        if (NSFoundationVersionNumber >= NSFoundationVersionNumber_iOS_7_0) {
+            if (nil == scrollView.superview
+                && (viewController.edgesForExtendedLayout & UIRectEdgeTop)
+                && viewController.automaticallyAdjustsScrollViewInsets) {
+                CGRect navFrame = self.navigationBar.frame;
+                tabbarFrame.origin.y -= navFrame.origin.y + navFrame.size.height;
+            }
+        }
+    }
+    self.tabBar.frame = tabbarFrame;
+    self.tabBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    [containnerView addSubview:self.tabBar];
+
+    [self.tabBar setTranslatesAutoresizingMaskIntoConstraints:!shouldAutoLayout];
+
+    if (shouldAutoLayout) {
         NSMutableArray * tabBarLayoutConstraints = [NSMutableArray array];
         NSDictionary * views = @{@"tabBar": self.tabBar};
         NSDictionary * heightMetrics = @{@"tabBarHeight": @(self.tabBarHeight)};
