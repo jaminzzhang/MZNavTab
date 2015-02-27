@@ -1,6 +1,6 @@
 //
-//  MZNavTabController.h
-//  MZNavTabSample
+//  MZNavTabItemController.h
+//  MZNavTab
 //
 //  Created by Jamin on 2/26/15.
 //  Copyright (c) 2015 MZ. All rights reserved.
@@ -9,11 +9,11 @@
 #import "MZNavigationController.h"
 
 
-@protocol MZNavTabChildChildViewController <MZNavigationChildViewController>
+@protocol MZNavTabItemChildViewController <MZNavigationChildViewController>
 
 @required
 /**
- *  MZNavTabController whould check if it should hide tabBar while push/pop a vc,
+ *  MZNavTabItemController whould check if it should hide tabBar while push/pop a vc,
  *  then it whould show/hide tabBar.
  *  @return
  */
@@ -23,7 +23,7 @@
 
 
 
-@interface MZNavTabController : MZNavigationController
+@interface MZNavTabItemController : MZNavigationController
 
 
 @property (nonatomic, weak) UIView * tabBar;

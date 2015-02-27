@@ -7,9 +7,9 @@
 //
 
 #import "ThirdViewController.h"
-#import "MZNavTabController.h"
+#import "MZNavTabItemController.h"
 
-@interface ThirdViewController () <MZNavTabChildChildViewController>
+@interface ThirdViewController () <MZNavTabItemChildViewController>
 
 @end
 
@@ -37,7 +37,7 @@
 */
 
 
-#pragma mark - MZNavTabChildChildViewController
+#pragma mark - MZNavTabItemChildViewController
 - (BOOL)shouldHideNavigationBar
 {
     return NO;

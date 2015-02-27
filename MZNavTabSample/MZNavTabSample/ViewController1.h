@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MZNavTabController.h"
+#import "MZNavTabItemController.h"
 
-@interface ViewController1 : UITableViewController <MZNavTabChildChildViewController>
+@interface ViewController1 : UITableViewController <MZNavTabItemChildViewController>
 
 @end

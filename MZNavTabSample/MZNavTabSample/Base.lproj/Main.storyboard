@@ -9,7 +9,7 @@
         <!--Item 2-->
         <scene sceneID="NiH-pI-N0Y">
             <objects>
-                <viewController storyboardIdentifier="navTabController2" id="qeo-Pw-Kqe" customClass="MZNavTabController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="navTabController2" id="qeo-Pw-Kqe" customClass="MZNavTabItemController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZfI-6s-tUw"/>
                         <viewControllerLayoutGuide type="bottom" id="whz-dj-6aK"/>
@@ -73,7 +73,7 @@
         <!--Item 1-->
         <scene sceneID="RUQ-q4-Zm8">
             <objects>
-                <viewController storyboardIdentifier="navTabController1" id="bqA-br-Vgw" customClass="MZNavTabController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="navTabController1" id="bqA-br-Vgw" customClass="MZNavTabItemController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fwY-YX-k1S"/>
                         <viewControllerLayoutGuide type="bottom" id="pKR-xg-VyG"/>

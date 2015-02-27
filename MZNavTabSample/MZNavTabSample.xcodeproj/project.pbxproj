@@ -14,7 +14,7 @@
 		EDB3B9601A9F24DD00307C8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDB3B95E1A9F24DD00307C8A /* LaunchScreen.xib */; };
 		EDB3B96C1A9F24DD00307C8A /* MZNavTabSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B96B1A9F24DD00307C8A /* MZNavTabSampleTests.m */; };
 		EDB3B9781A9F261700307C8A /* MZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9771A9F261700307C8A /* MZNavigationController.m */; };
-		EDB3B97B1A9F284B00307C8A /* MZNavTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B97A1A9F284B00307C8A /* MZNavTabController.m */; };
+		EDB3B97B1A9F284B00307C8A /* MZNavTabItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B97A1A9F284B00307C8A /* MZNavTabItemController.m */; };
 		EDB3B9811A9F302B00307C8A /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9801A9F302B00307C8A /* ViewController2.m */; };
 		EDB3B9841A9F304000307C8A /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9831A9F304000307C8A /* ViewController1.m */; };
 		EDB3B9871A9F309800307C8A /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9861A9F309800307C8A /* MainTabBarController.m */; };
@@ -46,8 +46,8 @@
 		EDB3B96B1A9F24DD00307C8A /* MZNavTabSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZNavTabSampleTests.m; sourceTree = "<group>"; };
 		EDB3B9761A9F261700307C8A /* MZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZNavigationController.h; sourceTree = "<group>"; };
 		EDB3B9771A9F261700307C8A /* MZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZNavigationController.m; sourceTree = "<group>"; };
-		EDB3B9791A9F284B00307C8A /* MZNavTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZNavTabController.h; sourceTree = "<group>"; };
-		EDB3B97A1A9F284B00307C8A /* MZNavTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZNavTabController.m; sourceTree = "<group>"; };
+		EDB3B9791A9F284B00307C8A /* MZNavTabItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZNavTabItemController.h; sourceTree = "<group>"; };
+		EDB3B97A1A9F284B00307C8A /* MZNavTabItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZNavTabItemController.m; sourceTree = "<group>"; };
 		EDB3B97F1A9F302B00307C8A /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		EDB3B9801A9F302B00307C8A /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		EDB3B9821A9F304000307C8A /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
@@ -151,8 +151,8 @@
 			children = (
 				EDB3B9761A9F261700307C8A /* MZNavigationController.h */,
 				EDB3B9771A9F261700307C8A /* MZNavigationController.m */,
-				EDB3B9791A9F284B00307C8A /* MZNavTabController.h */,
-				EDB3B97A1A9F284B00307C8A /* MZNavTabController.m */,
+				EDB3B9791A9F284B00307C8A /* MZNavTabItemController.h */,
+				EDB3B97A1A9F284B00307C8A /* MZNavTabItemController.m */,
 			);
 			name = MZNavTab;
 			path = ../MZNavTab;
@@ -261,7 +261,7 @@
 			files = (
 				EDB3B9551A9F24DD00307C8A /* AppDelegate.m in Sources */,
 				EDB3B9871A9F309800307C8A /* MainTabBarController.m in Sources */,
-				EDB3B97B1A9F284B00307C8A /* MZNavTabController.m in Sources */,
+				EDB3B97B1A9F284B00307C8A /* MZNavTabItemController.m in Sources */,
 				EDB3B9841A9F304000307C8A /* ViewController1.m in Sources */,
 				EDB3B98A1A9F343700307C8A /* SecondViewController.m in Sources */,
 				EDB3B98D1A9F344500307C8A /* ThirdViewController.m in Sources */,

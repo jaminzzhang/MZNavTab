@@ -95,7 +95,7 @@
 */
 
 
-#pragma mark - MZNavTabChildChildViewController
+#pragma mark - MZNavTabItemChildViewController
 - (BOOL)shouldHideNavigationBar
 {
     return NO;

@@ -1,14 +1,14 @@
 //
-//  MZNavTabController.m
-//  MZNavTabSample
+//  MZNavTabItemController.m
+//  MZNavTab
 //
 //  Created by Jamin on 2/26/15.
 //  Copyright (c) 2015 MZ. All rights reserved.
 //
 
-#import "MZNavTabController.h"
+#import "MZNavTabItemController.h"
 
-@interface MZNavTabController ()
+@interface MZNavTabItemController ()
 
 @property (nonatomic, weak) UIViewController * lastPopViewController;
 @property (nonatomic, assign) CGFloat tabBarHeight;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation MZNavTabController
+@implementation MZNavTabItemController
 @synthesize tabBar = _tabBar;
 
 
@@ -155,12 +155,12 @@
         return;
     }
 
-    MZNavTabController * myNavController = (MZNavTabController *)navigationController;
+    MZNavTabItemController * myNavController = (MZNavTabItemController *)navigationController;
 
     UINavigationControllerOperation currentOperation = [myNavController latestNavOperation];
     BOOL shouldHideTabBar = (navigationController.viewControllers.count > 1);
     if ([viewController respondsToSelector:@selector(shouldHideTabBar)]) {
-        shouldHideTabBar = [(id<MZNavTabChildChildViewController>)viewController shouldHideTabBar];
+        shouldHideTabBar = [(id<MZNavTabItemChildViewController>)viewController shouldHideTabBar];
     }
 
     if (shouldHideTabBar) {
@@ -184,10 +184,8 @@
         }
 
     } else {
-        if (self.tabBar.isHidden) {
-            [self attachTabbarOnViewController:viewController];
-        }
         self.tabBar.hidden = NO;
+        [self attachTabbarOnViewController:viewController];
     }
 }
 
@@ -198,14 +196,13 @@
     //在根页面的时候显示
     BOOL shouldHideTabBar = (navigationController.viewControllers.count > 1);
     if ([viewController respondsToSelector:@selector(shouldHideTabBar)]) {
-        shouldHideTabBar = [(id<MZNavTabChildChildViewController>)viewController shouldHideTabBar];
+        shouldHideTabBar = [(id<MZNavTabItemChildViewController>)viewController shouldHideTabBar];
     }
 
     if (nil != self.tabBarViewController) {
         [self attachTabbarOnViewController:self.tabBarViewController];
     }
     [self setTabBarHidden:shouldHideTabBar animated:NO];
-
 
     [super navigationController:navigationController
           didShowViewController:viewController

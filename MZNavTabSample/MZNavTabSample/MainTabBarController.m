@@ -7,7 +7,7 @@
 //
 
 #import "MainTabBarController.h"
-#import "MZNavTabController.h"
+#import "MZNavTabItemController.h"
 
 
 
@@ -26,8 +26,8 @@
     [super viewDidLoad];
     self.tabBar.delegate = self;
 
-    MZNavTabController * navTabController1 = [self.storyboard instantiateViewControllerWithIdentifier:@"navTabController1"];
-    if ([navTabController1 isKindOfClass:[MZNavTabController class]]) {
+    MZNavTabItemController * navTabController1 = [self.storyboard instantiateViewControllerWithIdentifier:@"navTabController1"];
+    if ([navTabController1 isKindOfClass:[MZNavTabItemController class]]) {
         navTabController1.tabBar = self.tabBar;
         navTabController1.tabBarViewController = self;
         UIViewController * viewController1 = [navTabController1.storyboard instantiateViewControllerWithIdentifier:@"ViewController1"];
@@ -38,8 +38,8 @@
 //    [self.view addSubview:navTabController1.view];
     [self addChildViewController:navTabController1];
 
-    MZNavTabController * navTabController2 = [self.storyboard instantiateViewControllerWithIdentifier:@"navTabController2"];
-    if ([navTabController2 isKindOfClass:[MZNavTabController class]]) {
+    MZNavTabItemController * navTabController2 = [self.storyboard instantiateViewControllerWithIdentifier:@"navTabController2"];
+    if ([navTabController2 isKindOfClass:[MZNavTabItemController class]]) {
         navTabController2.tabBar = self.tabBar;
         navTabController2.tabBarViewController = self;
         UIViewController * viewController2 = [navTabController2.storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];

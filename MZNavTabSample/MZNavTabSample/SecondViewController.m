@@ -8,9 +8,9 @@
 
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
-#import "MZNavTabController.h"
+#import "MZNavTabItemController.h"
 
-@interface SecondViewController () <MZNavTabChildChildViewController>
+@interface SecondViewController () <MZNavTabItemChildViewController>
 
 @end
 
