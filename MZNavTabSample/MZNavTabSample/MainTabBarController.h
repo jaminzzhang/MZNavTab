@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 MZ. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MZTabViewController.h"
 
-@interface MainTabBarController : UIViewController <UITabBarDelegate>
+@interface MainTabBarController : MZTabViewController <UITabBarDelegate>
 
 @property (nonatomic, strong) IBOutlet UITabBar * tabBar;
 

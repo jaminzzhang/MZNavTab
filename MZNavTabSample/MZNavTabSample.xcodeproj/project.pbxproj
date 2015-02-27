@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED8C72A81AA08D2F00323CB0 /* MZTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8C72A71AA08D2F00323CB0 /* MZTabViewController.m */; };
 		EDB3B9521A9F24DC00307C8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9511A9F24DC00307C8A /* main.m */; };
 		EDB3B9551A9F24DD00307C8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B9541A9F24DD00307C8A /* AppDelegate.m */; };
 		EDB3B95B1A9F24DD00307C8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB3B9591A9F24DD00307C8A /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED8C72A61AA08D2E00323CB0 /* MZTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTabViewController.h; sourceTree = "<group>"; };
+		ED8C72A71AA08D2F00323CB0 /* MZTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTabViewController.m; sourceTree = "<group>"; };
 		EDB3B94C1A9F24DC00307C8A /* MZNavTabSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZNavTabSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB3B9501A9F24DC00307C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB3B9511A9F24DC00307C8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				EDB3B9771A9F261700307C8A /* MZNavigationController.m */,
 				EDB3B9791A9F284B00307C8A /* MZNavTabItemController.h */,
 				EDB3B97A1A9F284B00307C8A /* MZNavTabItemController.m */,
+				ED8C72A61AA08D2E00323CB0 /* MZTabViewController.h */,
+				ED8C72A71AA08D2F00323CB0 /* MZTabViewController.m */,
 			);
 			name = MZNavTab;
 			path = ../MZNavTab;
@@ -260,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB3B9551A9F24DD00307C8A /* AppDelegate.m in Sources */,
+				ED8C72A81AA08D2F00323CB0 /* MZTabViewController.m in Sources */,
 				EDB3B9871A9F309800307C8A /* MainTabBarController.m in Sources */,
 				EDB3B97B1A9F284B00307C8A /* MZNavTabItemController.m in Sources */,
 				EDB3B9841A9F304000307C8A /* ViewController1.m in Sources */,
