@@ -176,6 +176,7 @@
     self.selectedItemIndex = index;
     [self.selectedItemViewController.view removeFromSuperview];
     self.selectedItemViewController = self.navControllers[index];
+    NSAssert(nil != self.tabBar, @"Tab bar should not be nil!");
     [self.view insertSubview:self.selectedItemViewController.view belowSubview:self.tabBar];
 
     if ([self.delegate respondsToSelector:@selector(tabViewController:didSelecteItemAtIndex:)]) {

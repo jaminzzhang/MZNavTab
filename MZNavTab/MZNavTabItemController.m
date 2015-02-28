@@ -135,7 +135,6 @@
         targetFrame = normalFrame;
     }
 
-    self.tabBar.hidden = NO;
     if (CGRectEqualToRect(targetFrame, tabBarFrame)) {
         return;
     }
@@ -150,6 +149,7 @@
     };
 
     if (animate) {
+        self.tabBar.hidden = NO;
         [UIView animateWithDuration:0.3
                               delay:0
                             options:UIViewAnimationOptionBeginFromCurrentState
@@ -226,6 +226,7 @@
         [self attachTabbarOnViewController:self.tabBarViewController];
     }
     [self setTabBarHidden:shouldHideTabBar animated:NO];
+//    self.tabBar.hidden = shouldHideTabBar;
 
     [super navigationController:navigationController
           didShowViewController:viewController
