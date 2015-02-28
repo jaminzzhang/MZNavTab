@@ -123,6 +123,8 @@
     UITabBar * tabBar = [[UITabBar alloc] initWithFrame:tabbarFrame];
     tabBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     tabBar.delegate = self;
+    tabBar.items = barItems;
+    tabBar.selectedItem = [barItems firstObject];
     return tabBar;
 }
 
@@ -156,13 +158,19 @@
 #pragma mark - Public
 - (void)selectItemAtIndex:(NSInteger)index
 {
-
     if (self.selectedItemIndex == index) {
         return;
     }
 
     if (index >= self.navControllers.count || index < 0) {
         return;
+    }
+
+    if ([self.tabBar isKindOfClass:[UITabBar class]]) {
+        UITabBar * defaultTabBar = (UITabBar *)self.tabBar;
+        if (defaultTabBar.selectedItem == nil && defaultTabBar.items.count > index) {
+            defaultTabBar.selectedItem = [defaultTabBar.items objectAtIndex:index];
+        }
     }
 
     self.selectedItemIndex = index;
@@ -184,6 +192,9 @@
     } else if ([self.tabBar isKindOfClass:[UITabBar class]]) {
         [(UITabBar *)self.tabBar setItems:items animated:animated];
     }
+
+
+    [self selectItemAtIndex:self.selectedItemIndex];
 }
 
 

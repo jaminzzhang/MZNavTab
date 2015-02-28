@@ -25,9 +25,10 @@
                                     <constraint firstAttribute="height" constant="49" id="UKX-Lc-wV6"/>
                                 </constraints>
                                 <items>
-                                    <tabBarItem title="Tab1" id="Uc6-Tn-KDk"/>
-                                    <tabBarItem title="Tab2" id="6vP-4q-6C4"/>
+                                    <tabBarItem title="Tab1" image="ico_tab_m" id="Uc6-Tn-KDk"/>
+                                    <tabBarItem title="Tab2" image="ico_tab_z" id="6vP-4q-6C4"/>
                                 </items>
+                                <color key="selectedImageTintColor" red="0.27058823529999998" green="0.67843137249999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -218,6 +219,10 @@
             <point key="canvasLocation" x="2182" y="496"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ico_tab_m" width="32" height="32"/>
+        <image name="ico_tab_z" width="32" height="32"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BLL-68-RYY"/>
         <segue reference="aLD-ti-cGU"/>
