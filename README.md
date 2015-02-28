@@ -27,7 +27,7 @@ How to run examples
 How to use
 ------------------
 
-The simplest way to use MZNavTab is creating a instance of `MZTabViewController` with initialization `- (instancetype)initWithTabBarItems:(NSArray *)tabBarItems itemViewControllers:(NSArray *)itemViewControllers`:
+The simplest way to use MZNavTab is creating an instance of class `MZTabViewController` with initialization `- (instancetype)initWithTabBarItems:(NSArray *)tabBarItems itemViewControllers:(NSArray *)itemViewControllers`:
 
 
 ```objc
@@ -40,7 +40,7 @@ UIViewController * viewController2 = [[UIViewController alloc] init];
 MZTabViewController * tabViewController = [[MZTabViewController alloc] initWithTabBarItems:@[item1, item2] itemViewControllers:@[viewController1, viewController2]];
 ```
 
-Case MZNavTab if flexble, you can use it in these ways:
+MZNavTab is flexble, so you can use it in these ways:
 
 1. Subclass `MZTabViewController` and build your tab bar
 2. Build your tab controller instead of using `MZTabViewController` and using `MZNavTabItemController` in your tab controller (Read the code in `MZTabViewController`, you will know how to use it).
