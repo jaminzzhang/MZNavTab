@@ -27,6 +27,21 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+//#define BUILD_TAB_BAR_BY_CODE 1
+#if BUILD_TAB_BAR_BY_CODE
+    NSArray * barItems = @[[[UITabBarItem alloc] initWithTitle:@"Tab1" image:[UIImage imageNamed:@"ico_tab_m"] tag:1], [[UITabBarItem alloc] initWithTitle:@"Tab2" image:[UIImage imageNamed:@"ico_tab_z"] tag:2]];
+    CGRect bounds = self.view.bounds;
+    CGFloat tabBarHeight = 49.0;
+    CGRect tabbarFrame = CGRectMake(0, bounds.size.height - tabBarHeight,
+                                    bounds.size.width, tabBarHeight);
+    UITabBar * tabBar = [[UITabBar alloc] initWithFrame:tabbarFrame];
+    tabBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    tabBar.delegate = self;
+    tabBar.items = barItems;
+    tabBar.selectedItem = [barItems firstObject];
+    self.tabBar = tabBar;
+#endif
+
     self.tabBar.selectedImageTintColor = UIColorFromRGB(0x45addd);
 
     //    [self addChildViewController:navTabController2];
