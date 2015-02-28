@@ -1,6 +1,6 @@
-MZNavTab
+#MZNavTab
 ------------------
-
+[![Build Status](https://travis-ci.org/jaminzzhang/MZNavTab.svg)](https://travis-ci.org/jaminzzhang/MZNavTab)
 MZNavTab is an iOS library, it can help you combine UITabBar and UINavigationController.
 
 
