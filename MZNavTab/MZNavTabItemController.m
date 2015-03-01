@@ -67,6 +67,7 @@
     if (self.tabBar.superview == viewController.view) {
         return;
     }
+    
     //push
     CGRect bounds = viewController.view.bounds;
     CGFloat tabBarHeight = self.tabBar.bounds.size.height;
@@ -87,10 +88,11 @@
                 && (viewController.edgesForExtendedLayout & UIRectEdgeTop)
                 && viewController.automaticallyAdjustsScrollViewInsets) {
                 CGRect navFrame = self.navigationBar.frame;
-                tabbarFrame.origin.y -= navFrame.origin.y + navFrame.size.height;
+                tabbarFrame.origin.y -= navFrame.origin.y + navFrame.size.height + bounds.origin.y;
             }
         }
     }
+
     self.tabBar.frame = tabbarFrame;
     self.tabBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     [containnerView addSubview:self.tabBar];
@@ -189,21 +191,27 @@
     if (shouldHideTabBar) {
 
         if (!self.tabBar.isHidden) {
+            UIViewController * prevViewController = nil;
             if (currentOperation == UINavigationControllerOperationPush) {
                 //当前是push操作，将tabbar放在viewController上一个VC上
                 //If current operation is pushing, show tabbar on preview VC
                 NSArray * viewControllers = navigationController.viewControllers;
                 NSUInteger count = viewControllers.count;
                 if (count >= 2) {
-                    UIViewController * prevViewController = viewControllers[count - 2];
-                    [self attachTabbarOnViewController:prevViewController];
+                    prevViewController = viewControllers[count - 2];
                 }
             } else if (currentOperation == UINavigationControllerOperationPop) {
-                if (nil != self.lastPopViewController) {
-                    [self attachTabbarOnViewController:myNavController.lastPopViewController];
-                }
+                prevViewController = myNavController.lastPopViewController;
             }
 
+            //check if prevViewController need to show tabbar
+            if ([prevViewController respondsToSelector:@selector(shouldHideTabBar)]) {
+                BOOL shouldHideTabBarOnPrevVC = [(id<MZNavTabItemChildViewController>)prevViewController shouldHideTabBar];
+                self.tabBar.hidden = shouldHideTabBarOnPrevVC;
+                if (!shouldHideTabBarOnPrevVC) {
+                    [self attachTabbarOnViewController:prevViewController];
+                }
+            }
         }
 
     } else {
@@ -225,8 +233,8 @@
     if (nil != self.tabBarViewController) {
         [self attachTabbarOnViewController:self.tabBarViewController];
     }
-    [self setTabBarHidden:shouldHideTabBar animated:NO];
-//    self.tabBar.hidden = shouldHideTabBar;
+//    [self setTabBarHidden:shouldHideTabBar animated:NO];
+    self.tabBar.hidden = shouldHideTabBar;
 
     [super navigationController:navigationController
           didShowViewController:viewController
