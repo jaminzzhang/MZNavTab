@@ -161,7 +161,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="49I-Q5-LIc" kind="show" id="6i8-Tc-UZA"/>
+                                    <segue destination="49I-Q5-LIc" kind="push" id="6i8-Tc-UZA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -224,7 +224,7 @@
         <image name="ico_tab_z" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BLL-68-RYY"/>
-        <segue reference="aLD-ti-cGU"/>
+        <segue reference="Dwt-qV-PPw"/>
+        <segue reference="6i8-Tc-UZA"/>
     </inferredMetricsTieBreakers>
 </document>
