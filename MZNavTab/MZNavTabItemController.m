@@ -64,10 +64,6 @@
 
 - (void)attachTabbarOnViewController:(UIViewController *)viewController
 {
-    if (self.tabBar.superview == viewController.view) {
-        return;
-    }
-    
     //push
     CGRect bounds = viewController.view.bounds;
     CGFloat tabBarHeight = self.tabBar.bounds.size.height;
@@ -88,15 +84,20 @@
                 && (viewController.edgesForExtendedLayout & UIRectEdgeTop)
                 && viewController.automaticallyAdjustsScrollViewInsets) {
                 CGRect navFrame = self.navigationBar.frame;
-                tabbarFrame.origin.y -= navFrame.origin.y + navFrame.size.height + bounds.origin.y;
+                tabbarFrame.origin.y -= navFrame.origin.y + navFrame.size.height;
+                tabbarFrame.origin.y += scrollView.contentInset.top;
             }
         }
     }
 
     self.tabBar.frame = tabbarFrame;
     self.tabBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-    [containnerView addSubview:self.tabBar];
 
+    if (self.tabBar.superview == viewController.view) {
+        return;
+    }
+
+    [containnerView addSubview:self.tabBar];
     [self.tabBar setTranslatesAutoresizingMaskIntoConstraints:!shouldAutoLayout];
 
     if (shouldAutoLayout) {
@@ -205,12 +206,14 @@
             }
 
             //check if prevViewController need to show tabbar
+            BOOL shouldHideTabBarOnPrevVC = NO;
             if ([prevViewController respondsToSelector:@selector(shouldHideTabBar)]) {
                 BOOL shouldHideTabBarOnPrevVC = [(id<MZNavTabItemChildViewController>)prevViewController shouldHideTabBar];
                 self.tabBar.hidden = shouldHideTabBarOnPrevVC;
-                if (!shouldHideTabBarOnPrevVC) {
-                    [self attachTabbarOnViewController:prevViewController];
-                }
+            }
+
+            if (!shouldHideTabBarOnPrevVC) {
+                [self attachTabbarOnViewController:prevViewController];
             }
         }
 
