@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MZNavTab"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "MZNavTab is an iOS library, it can help you combine UITabBar and UINavigationController."
 
   s.description  = <<-DESC
@@ -24,55 +24,55 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/jaminzzhang/MZNavTab.git"
-  s.screenshots  = "https://raw.githubusercontent.com/jaminzzhang/MZNavTab/master/MZNavTabSample/ScreenShot/mznavtab_sample.gif"
+          s.screenshots  = "https://raw.githubusercontent.com/jaminzzhang/MZNavTab/master/MZNavTabSample/ScreenShot/mznavtab_sample.gif"
 
 
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See http://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
+      # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+      #
+      #  Licensing your code is important. See http://choosealicense.com for more info.
+      #  CocoaPods will detect a license file if there is a named LICENSE*
+      #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
+      #
 
-  s.license      = { :type => "MIT", :file => "LICENSE" }
-
-
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
-
-  s.author             = { "Jamin Zhang" => "jaminzzhang@gmail.com" }
-  # Or just: s.author    = "Jamin Zhang"
-  # s.authors            = { "Jamin Zhang" => "jaminzzhang@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/Jamin Zhang"
-
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  #s.platform     = :ios
-  s.platform     = :ios, "6.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
+      s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
+      # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+      #
+      #  Specify the authors of the library, with email addresses. Email addresses
+      #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
+      #  accepts just a name if you'd rather not provide an email address.
+      #
+      #  Specify a social_media_url where others can refer to, for example a twitter
+      #  profile URL.
+      #
 
-  s.source       = { :git => "https://github.com/jaminzzhang/MZNavTab.git", :tag => "1.0.0" }
+      s.author             = { "Jamin Zhang" => "jaminzzhang@gmail.com" }
+      # Or just: s.author    = "Jamin Zhang"
+      # s.authors            = { "Jamin Zhang" => "jaminzzhang@gmail.com" }
+      # s.social_media_url   = "http://twitter.com/Jamin Zhang"
+
+      # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+      #
+      #  If this Pod runs only on iOS or OS X, then specify the platform and
+      #  the deployment target. You can optionally include the target after the platform.
+      #
+
+      #s.platform     = :ios
+      s.platform     = :ios, "6.0"
+
+      #  When using multiple platforms
+      # s.ios.deployment_target = "5.0"
+      # s.osx.deployment_target = "10.7"
+
+
+      # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+      #
+      #  Specify the location from where the source should be retrieved.
+      #  Supports git, hg, bzr, svn and HTTP.
+      #
+
+      s.source       = { :git => "https://github.com/jaminzzhang/MZNavTab.git", :tag => "1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
